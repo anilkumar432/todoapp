@@ -1,28 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import profilePic from './assets/logo.svg';
+import circleTick from './assets/circle-tick.svg';
+import forwardArrow from './assets/forward.svg';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+          <img src={profilePic} className="profilePic"/>
+          <p className="welcome">Welcome </p>
+          <div className="message">
+            <img src={circleTick} className="circleTick"/>
+            <p>You have Successfully Created ToDo Account </p>
+          </div>
+          <button className="button"><img src={forwardArrow} className="arrow"/></button>
+
       </div>
     );
   }
 }
+
+
 
 export default App;
